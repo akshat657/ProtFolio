@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="relative z-10 flex flex-col items-center text-center px-6 py-[90px]">
+    <section className="relative z-10 flex flex-col items-center text-center px-6 py-[90px] pt-32">
 
       <h1
         className="text-5xl sm:text-7xl md:text-8xl font-normal leading-[0.95] max-w-7xl animate-fade-rise"
@@ -20,7 +20,10 @@ export default function HeroSection() {
         Amid the chaos, we build digital spaces for sharp focus and inspired work.
       </p>
 
-      <button className="liquid-glass rounded-full px-14 py-5 text-base text-foreground mt-12 hover:scale-[1.03] transition-transform animate-fade-rise-delay-2 cursor-pointer">
+      <button
+        className="liquid-glass rounded-full px-14 py-5 text-base text-foreground mt-12 hover:scale-[1.03] transition-transform animate-fade-rise-delay-2 cursor-pointer"
+        onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
+      >
         Begin Journey
       </button>
 
