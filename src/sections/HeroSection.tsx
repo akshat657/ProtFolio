@@ -31,7 +31,7 @@ export default function HeroSection() {
           <h1
             className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] mt-6 sm:mt-4 md:-mt-5"
           >
-            Hi, i&apos;m jack
+            Hi, i&apos;m akshat
           </h1>
         </FadeIn>
       </div>
@@ -43,7 +43,7 @@ export default function HeroSection() {
             className="font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]"
             style={{ color: '#D7E2EA', fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
           >
-            a 3d creator driven by crafting striking and unforgettable projects
+            an ai engineer driven by building intelligent products that actually work
           </p>
         </FadeIn>
         <FadeIn delay={0.5} y={20}>
@@ -65,7 +65,7 @@ export default function HeroSection() {
         >
           <img
             src="https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png"
-            alt="Jack portrait"
+            alt="Akshat portrait"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
         </Magnet>

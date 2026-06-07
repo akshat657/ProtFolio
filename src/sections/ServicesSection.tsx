@@ -3,28 +3,28 @@ import FadeIn from '../components/ui/FadeIn'
 const services = [
   {
     number: '01',
-    name: '3D Modeling',
-    description: 'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.',
+    name: 'AI / LLM Engineering',
+    description: 'Building products powered by large language models — intelligent assistants, context-aware chatbots, RAG pipelines, and generative features that actually ship.',
   },
   {
     number: '02',
-    name: 'Rendering',
-    description: 'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.',
+    name: 'Full-Stack Development',
+    description: 'End-to-end web applications with React, TypeScript, and modern backend tooling — fast, clean, and production-ready from day one.',
   },
   {
     number: '03',
-    name: 'Motion Design',
-    description: 'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.',
+    name: 'Automation & Agents',
+    description: 'Designing autonomous AI agent workflows and automation pipelines that connect tools, eliminate repetitive tasks, and scale intelligently.',
   },
   {
     number: '04',
-    name: 'Branding',
-    description: 'Crafting cohesive visual identities — from logos to full brand systems — that communicate a clear and memorable presence.',
+    name: 'Product Prototyping',
+    description: 'Rapid ideation to working prototype — validating ideas fast with real, functional builds before committing to full development cycles.',
   },
   {
     number: '05',
-    name: 'Web Design',
-    description: 'Designing clean, modern, and conversion-focused websites with attention to layout, typography, and user experience.',
+    name: 'API Integration',
+    description: 'Connecting AI APIs, third-party services, and data sources into cohesive, reliable systems with clean interfaces and solid error handling.',
   },
 ]
 
