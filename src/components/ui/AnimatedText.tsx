@@ -22,9 +22,9 @@ export default function AnimatedText({ text, className }: AnimatedTextProps) {
         const start = i / chars.length
         const end = (i + 1) / chars.length
         return (
-          <span key={i} style={{ position: 'relative', display: 'inline-block' }}>
+          <span key={i} style={{ position: 'relative', display: 'inline-block', whiteSpace: char === ' ' ? 'pre' : undefined }}>
             {/* Invisible placeholder to preserve layout */}
-            <span style={{ opacity: 0 }}>{char}</span>
+            <span style={{ opacity: 0 }}>{char === ' ' ? ' ' : char}</span>
             {/* Animated overlay */}
             <AnimatedChar
               char={char}
