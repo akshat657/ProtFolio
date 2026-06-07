@@ -22,7 +22,7 @@ export default function AnimatedText({ text, className }: AnimatedTextProps) {
         const start = i / chars.length
         const end = (i + 1) / chars.length
         return (
-          <span key={i} style={{ position: 'relative', display: 'inline' }}>
+          <span key={i} style={{ position: 'relative', display: 'inline-block' }}>
             {/* Invisible placeholder to preserve layout */}
             <span style={{ opacity: 0 }}>{char}</span>
             {/* Animated overlay */}
