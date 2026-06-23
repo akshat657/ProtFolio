@@ -1,76 +1,69 @@
-import FadeIn from '../components/ui/FadeIn'
-import AnimatedText from '../components/ui/AnimatedText'
-import ContactButton from '../components/ui/ContactButton'
+﻿import FadeIn from '../components/ui/FadeIn'
+
+const facts = [
+  { k: 'BASED IN', v: 'India · Remote' },
+  { k: 'FOCUS', v: 'LLMs · Agents · Full-Stack' },
+  { k: 'EDUCATION', v: 'B.Tech. Computer Science' },
+  { k: 'CURRENTLY', v: 'AI Eng. Intern @ BluParrot' },
+]
 
 export default function AboutSection() {
   return (
-    <section
-      id="about"
-      className="relative min-h-screen px-5 sm:px-8 md:px-10 py-20 flex flex-col items-center justify-center"
-      style={{ background: '#0C0C0C' }}
-    >
-      {/* Top-left: Moon */}
-      <FadeIn delay={0.1} x={-80} y={0} duration={0.9} className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%]">
-        <img
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png"
-          alt=""
-          className="w-[120px] sm:w-[160px] md:w-[210px] select-none pointer-events-none"
-        />
-      </FadeIn>
-
-      {/* Bottom-left: 3D blob */}
-      <FadeIn delay={0.25} x={-80} y={0} duration={0.9} className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%]">
-        <img
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/p59_1.4659672e.png"
-          alt=""
-          className="w-[100px] sm:w-[140px] md:w-[180px] select-none pointer-events-none"
-        />
-      </FadeIn>
-
-      {/* Top-right: Lego */}
-      <FadeIn delay={0.15} x={80} y={0} duration={0.9} className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%]">
-        <img
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/lego_icon-1.703bb594.png"
-          alt=""
-          className="w-[120px] sm:w-[160px] md:w-[210px] select-none pointer-events-none"
-        />
-      </FadeIn>
-
-      {/* Bottom-right: 3D group */}
-      <FadeIn delay={0.3} x={80} y={0} duration={0.9} className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%]">
-        <img
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png"
-          alt=""
-          className="w-[130px] sm:w-[170px] md:w-[220px] select-none pointer-events-none"
-        />
-      </FadeIn>
-
-      {/* Center content */}
-      <div className="relative z-10 flex flex-col items-center text-center">
-        <FadeIn delay={0} y={40}>
-          <h2
-            className="hero-heading font-black uppercase leading-none tracking-tight"
-            style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
-          >
-            About me
-          </h2>
+    <section id="about" style={{
+      position: 'relative', zIndex: 1,
+      padding: 'clamp(70px, 11vw, 140px) clamp(20px, 5vw, 64px)',
+      scrollMarginTop: 70,
+    }}>
+      <div style={{
+        maxWidth: 1200, margin: '0 auto',
+        display: 'grid', gridTemplateColumns: '0.85fr 1.15fr',
+        gap: 'clamp(36px, 6vw, 80px)', alignItems: 'center',
+      }}>
+        <FadeIn delay={0} x={-30} y={0}>
+          <div style={{ position: 'relative' }}>
+            <div style={{
+              position: 'absolute', inset: -14, borderRadius: 28,
+              background: 'linear-gradient(135deg, var(--accent), var(--accent2))',
+              opacity: 0.25, filter: 'blur(36px)',
+            }} />
+            <div style={{
+              position: 'relative', width: '100%', height: 440,
+              border: '1px solid var(--brd)', borderRadius: 22,
+              background: 'var(--panel)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }}>
+              <div style={{ textAlign: 'center', color: 'var(--muted)' }}>
+                <div style={{
+                  width: 80, height: 80, borderRadius: '50%', margin: '0 auto 16px',
+                  background: 'linear-gradient(135deg, var(--accent), var(--accent2))',
+                  display: 'grid', placeItems: 'center',
+                  fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 32, color: '#04060c',
+                }}>A</div>
+                <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, letterSpacing: '.04em' }}>akshat khandelwal</p>
+              </div>
+            </div>
+          </div>
         </FadeIn>
 
-        <div
-          style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)', color: '#D7E2EA' }}
-          className="mt-10 sm:mt-14 md:mt-16"
-        >
-          <AnimatedText
-            text="i'm an ai engineering intern at bluparrot, building llm-powered products and intelligent automation systems. i love turning complex ideas into real, working software — from fine-tuning models to shipping full-stack apps. let's build something that matters."
-            className="font-medium text-center leading-relaxed max-w-[560px]"
-          />
-        </div>
-
-        <div className="mt-16 sm:mt-20 md:mt-24">
-          <FadeIn>
-            <ContactButton />
-          </FadeIn>
-        </div>
+        <FadeIn delay={0.15} y={30}>
+          <div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '.1em', color: 'var(--accent)', marginBottom: 16 }}>03 / ABOUT</div>
+            <h2 className="heading" style={{ fontSize: 'clamp(28px, 4.4vw, 52px)', lineHeight: 1.05, marginBottom: 24 }}>Research-minded, production-obsessed.</h2>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: 'var(--muted)', marginBottom: 18 }}>
+              I started building AI tools out of curiosity and quickly fell for the harder problem: making models <strong style={{ color: 'var(--text)', fontWeight: 600 }}>survive contact with reality</strong>. Today I work at BluParrot on LLM-powered products — owning everything from pipeline design and prompt engineering to evaluation, serving, and debugging in prod.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: 'var(--muted)', marginBottom: 30 }}>
+              My sweet spot is the messy middle: turning a promising notebook into a feature with real users — and building the eval loops that keep it sharp over time.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16 }}>
+              {facts.map(f => (
+                <div key={f.k} style={{ borderLeft: '2px solid var(--accent)', paddingLeft: 14 }}>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: '.04em', color: 'var(--muted)', marginBottom: 4 }}>{f.k}</div>
+                  <div style={{ fontSize: 15, color: 'var(--text)', fontWeight: 600 }}>{f.v}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   )
