@@ -104,6 +104,7 @@ body {
 @media (max-width: 768px) {
   /* Nav */
   .nav-links { display: none !important; }
+  .nav-hamburger { display: flex !important; }
 
   /* Hero */
   .hero-main-grid {
