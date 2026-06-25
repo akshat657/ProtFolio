@@ -14,7 +14,7 @@ export default function AboutSection() {
       padding: 'clamp(70px, 11vw, 140px) clamp(20px, 5vw, 64px)',
       scrollMarginTop: 70,
     }}>
-      <div style={{
+      <div className="about-grid" style={{
         maxWidth: 1200, margin: '0 auto',
         display: 'grid', gridTemplateColumns: '0.85fr 1.15fr',
         gap: 'clamp(36px, 6vw, 80px)', alignItems: 'center',
@@ -26,7 +26,7 @@ export default function AboutSection() {
               background: 'linear-gradient(135deg, var(--accent), var(--accent2))',
               opacity: 0.25, filter: 'blur(36px)',
             }} />
-            <div style={{
+            <div className="about-photo" style={{
               position: 'relative', width: '100%', height: 440,
               border: '1px solid var(--brd)', borderRadius: 22,
               overflow: 'hidden',

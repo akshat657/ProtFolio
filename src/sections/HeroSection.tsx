@@ -155,7 +155,7 @@ export default function HeroSection({ accent }: HeroProps) {
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 1200, width: '100%', margin: '0 auto' }}>
 
         {/* Main two-column grid */}
-        <div style={{
+        <div className="hero-main-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'clamp(220px, 26vw, 340px) 1fr',
           gap: 'clamp(36px, 5vw, 72px)',
@@ -263,9 +263,9 @@ export default function HeroSection({ accent }: HeroProps) {
           </FadeIn>
 
           {/* RIGHT: heading + bio + CTAs */}
-          <div style={{ display: 'flex', gap: 'clamp(20px, 3vw, 36px)', alignItems: 'flex-start' }}>
+          <div className="hero-right-col" style={{ display: 'flex', gap: 'clamp(20px, 3vw, 36px)', alignItems: 'flex-start' }}>
             {/* Vertical accent line */}
-            <div style={{
+            <div className="hero-vert-line" style={{
               width: 2, alignSelf: 'stretch', flexShrink: 0, borderRadius: 2,
               background: 'linear-gradient(to bottom, var(--accent) 0%, transparent 100%)',
               minHeight: 200,

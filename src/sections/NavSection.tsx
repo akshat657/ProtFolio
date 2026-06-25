@@ -51,6 +51,7 @@ export default function NavSection({ theme, toggleTheme }: NavProps) {
       </a>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(8px, 2vw, 30px)' }}>
+        <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: 'clamp(8px, 2vw, 30px)' }}>
         {navLinks.map(link => (
           <a key={link} href={`#${link}`}
             style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12.5, fontWeight: 700, letterSpacing: '.03em', color: 'var(--muted)', textDecoration: 'none', padding: '6px 2px', transition: 'color .2s' }}
@@ -59,6 +60,7 @@ export default function NavSection({ theme, toggleTheme }: NavProps) {
             {link}
           </a>
         ))}
+        </div>
 
         <Magnetic>
           <button onClick={toggleTheme} style={{

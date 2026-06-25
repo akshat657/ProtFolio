@@ -98,3 +98,53 @@ body {
 .animate-blink { animation: blink 1s step-end infinite; }
 .animate-marquee { animation: marquee-scroll 32s linear infinite; }
 .animate-bob { animation: bob 2.4s ease-in-out infinite; }
+
+/* ─── Responsive ────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  /* Nav */
+  .nav-links { display: none !important; }
+
+  /* Hero */
+  .hero-main-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+  .hero-vert-line { display: none !important; }
+  .hero-right-col { flex-direction: column !important; gap: 0 !important; }
+  .hero-right-col > div { flex: 1; }
+
+  /* Work cards */
+  .work-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .work-card-right {
+    border-left: none !important;
+    border-top: 1px solid var(--brd) !important;
+    min-height: 220px !important;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .about-photo { height: 300px !important; }
+
+  /* Education rows */
+  .edu-row {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  /* Stats grid in hobbies / achievements */
+  .stats-4-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .stats-4-grid > div {
+    border-left: none !important;
+    border-top: 1px solid var(--brd);
+  }
+  .stats-4-grid > div:nth-child(odd) {
+    border-left: none !important;
+  }
+}

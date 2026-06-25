@@ -51,7 +51,7 @@ export default function EducationSection() {
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           {degrees.map((d, i) => (
             <FadeIn key={i} delay={i * 0.1} y={20}>
-              <div style={{
+              <div className="edu-row" style={{
                 display: 'grid', gridTemplateColumns: '160px 1fr',
                 gap: 'clamp(16px, 3vw, 40px)',
                 padding: '34px 0',

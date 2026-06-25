@@ -342,6 +342,7 @@ export default function WorkSection() {
           {projects.map((p, i) => (
             <FadeIn key={p.no} delay={i * 0.08} y={30}>
               <div
+                className="work-card-grid"
                 style={{
                   display: 'grid', gridTemplateColumns: '1.1fr 1fr',
                   border: '1px solid var(--brd)', borderRadius: 22, overflow: 'hidden',
@@ -402,7 +403,7 @@ export default function WorkSection() {
                 </div>
 
                 {/* Right: carousel */}
-                <div style={{
+                <div className="work-card-right" style={{
                   borderLeft: '1px solid var(--brd)', overflow: 'hidden',
                   background: 'linear-gradient(150deg, color-mix(in srgb, var(--accent) 16%, transparent), color-mix(in srgb, var(--accent2) 8%, transparent))',
                 }}>
