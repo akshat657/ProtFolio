@@ -2,34 +2,34 @@
 
 const skills = [
   {
-    no: '01', title: 'LLMs & NLP',
-    blurb: 'Fine-tuning, RAG pipelines, prompt engineering, and evaluation harnesses for language models that actually ship.',
-    items: ['Fine-tuning / LoRA', 'RAG', 'Prompt eval', 'LangChain', 'OpenAI API'],
+    no: '01', title: 'Gen AI & LLMs',
+    blurb: 'Building with large language models end to end — RAG pipelines, prompt engineering, knowledge graphs, and dual-vector retrieval that ships to real users.',
+    items: ['RAG / FAISS / Qdrant', 'LangChain / LangGraph', 'Prompt Engineering', 'SaulLM / Claude API', 'Transformers / HuggingFace'],
   },
   {
-    no: '02', title: 'Full-Stack Dev',
-    blurb: 'End-to-end web apps with React, TypeScript, and modern backend tooling — clean, fast, production-ready.',
-    items: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Docker'],
+    no: '02', title: 'AI Agents & Automation',
+    blurb: 'Designing autonomous agent workflows that reason, use tools, and act — from multi-agent sales pipelines to agentic document drafting systems.',
+    items: ['LangGraph Agents', 'Multi-Agent Systems', 'Tool Use & Orchestration', 'Agentic Workflows', 'Sales Automation'],
   },
   {
-    no: '03', title: 'Automation & Agents',
-    blurb: 'Designing autonomous AI agent workflows and automation pipelines that connect tools and scale intelligently.',
-    items: ['LangGraph', 'AI Agents', 'Webhooks', 'Multi-step flows', 'Pipelines'],
+    no: '03', title: 'Voice AI & Multimodal',
+    blurb: 'Real-time voice pipelines and multimodal AI — from speech-to-text transcription to voice agents deployed on live business operations.',
+    items: ['Vapi / Milli / Unleash', 'Whisper (speech-to-text)', 'Voice Agent Design', 'Groq API (fast inference)', 'Multimodal Pipelines'],
   },
   {
-    no: '04', title: 'Product Prototyping',
-    blurb: 'Rapid ideation to working prototype — validating ideas fast with real, functional builds.',
-    items: ['Vite', 'shadcn/ui', 'Framer Motion', 'MVP design', 'UX thinking'],
+    no: '04', title: 'Full-Stack & API Dev',
+    blurb: 'End-to-end product engineering — clean React frontends, FastAPI/Streamlit backends, and robust REST integrations that hold up in production.',
+    items: ['React / TypeScript', 'FastAPI / Streamlit', 'REST APIs / MCP', 'Docker', 'PostgreSQL / SQL'],
   },
   {
-    no: '05', title: 'MLOps & Tooling',
-    blurb: 'Model serving, evaluation frameworks, and observability that keeps AI features alive in production.',
-    items: ['MLflow', 'Docker', 'Eval harness', 'Logging', 'Monitoring'],
+    no: '05', title: 'Vector Databases & Infra',
+    blurb: 'Storing, indexing, and retrieving embeddings at scale. Keeping AI features reliable with evaluation loops, logging, and observability.',
+    items: ['FAISS', 'Qdrant', 'Embedding Pipelines', 'AWS / GCP', 'Eval Harnesses'],
   },
   {
-    no: '06', title: 'API Integration',
-    blurb: 'Connecting AI APIs and third-party services into cohesive, reliable systems with clean interfaces.',
-    items: ['OpenAI', 'YouTube API', 'Whisper API', 'REST', 'Error handling'],
+    no: '06', title: 'Data & Analytics',
+    blurb: 'Turning raw data into signals — from API-fed real-time dashboards to pandas pipelines that feed downstream AI features.',
+    items: ['Pandas / NumPy', 'Power BI', 'Feature Engineering', 'Data Cleaning', 'API Data Ingestion'],
   },
 ]
 
@@ -44,7 +44,7 @@ export default function SkillsSection() {
         <FadeIn delay={0} y={30}>
           <div style={{ marginBottom: 48 }}>
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '.1em', color: 'var(--accent)', marginBottom: 12 }}>02 / CAPABILITIES</div>
-            <h2 className="heading" style={{ fontSize: 'clamp(32px, 5.5vw, 64px)', lineHeight: 1, maxWidth: 760 }}>The full AI stack, end to end</h2>
+            <h2 className="heading" style={{ fontSize: 'clamp(32px, 5.5vw, 64px)', lineHeight: 1, maxWidth: 760 }}>The Gen AI stack, end to end</h2>
           </div>
         </FadeIn>
 

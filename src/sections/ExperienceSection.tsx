@@ -2,25 +2,29 @@
 
 const experience = [
   {
-    period: '2025 — now',
+    period: 'Dec 2025 — now',
     role: 'AI Engineering Intern',
     org: 'BluParrot',
-    desc: 'Building LLM-powered products and intelligent automation systems. Working on RAG pipelines, agent workflows, and real production ML features that ship to users.',
-    tags: ['LLMs', 'RAG', 'Agents', 'Production ML'],
+    location: 'Gurugram, India',
+    bullets: [
+      'Built a personality-driven AI chatbot (SparqNow, UK client) using RAG, knowledge graphs, and dual-vector embeddings — enabling expert-specific reasoning and response styles.',
+      'Developed an AI legal drafting system using SaulLM + Claude API, generating 500+ jurisdiction-compliant documents and cutting drafting time by 60%.',
+      'Built a LangGraph-powered multi-agent sales platform automating lead discovery, qualification, and outreach — reducing manual effort by 80%+.',
+      'Deployed voice AI agents for Indian and international clients using Vapi, Unleash, and Milli\'s platforms.',
+    ],
+    tags: ['LLMs', 'RAG', 'LangGraph', 'Voice AI', 'Multi-Agent', 'Prompt Engineering'],
   },
   {
-    period: '2024 — 25',
-    role: 'Solo Engineer — Personal Projects',
-    org: '',
-    desc: 'Built LastMinutePrep (AI-powered exam prep with YouTube transcript extraction and adaptive Q&A) and MedReel (medical video transcription and analysis pipeline with GPT-4).',
-    tags: ['Full-Stack', 'AI / ML', 'FastAPI', 'React'],
-  },
-  {
-    period: 'Ongoing',
-    role: 'B.Tech. Computer Science',
-    org: 'University',
-    desc: 'Studying CS with a focus on machine learning, algorithms, and software systems. Building side projects alongside to apply theory to real-world problems.',
-    tags: ['ML', 'Algorithms', 'Systems', 'Research'],
+    period: 'Apr 2025 — Sep 2025',
+    role: 'AI Intern',
+    org: 'Zyod',
+    location: 'Remote',
+    bullets: [
+      'Architected an internal RAG-powered chatbot ingesting company policies, SOPs, and FAQs — enabling real-time institutional knowledge queries without manual lookup.',
+      'Developed voice AI agents for lead engagement, payment reminders, and order confirmation using real-time conversational pipelines.',
+      'Optimised LLM prompt pipelines for fashion-tech modules (style classification, vendor matching), reducing AI error rate by 35% and iteration cycles by 50%.',
+    ],
+    tags: ['RAG', 'Voice AI', 'Prompt Optimisation', 'LLM Pipelines', 'Fashion-tech AI'],
   },
 ]
 
@@ -43,18 +47,28 @@ export default function ExperienceSection() {
           {experience.map((e, i) => (
             <FadeIn key={i} delay={i * 0.1} y={20}>
               <div style={{
-                display: 'grid', gridTemplateColumns: '140px 1fr',
+                display: 'grid', gridTemplateColumns: '160px 1fr',
                 gap: 'clamp(16px, 3vw, 40px)',
-                padding: '30px 0',
+                padding: '34px 0',
                 borderTop: '1px solid var(--brd)',
               }}>
-                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: 'var(--muted)', paddingTop: 5 }}>{e.period}</div>
+                <div style={{ paddingTop: 4 }}>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: 'var(--muted)', lineHeight: 1.5 }}>{e.period}</div>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: 'var(--muted)', marginTop: 4, opacity: 0.65 }}>{e.location}</div>
+                </div>
                 <div>
-                  <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap', marginBottom: 8 }}>
-                    <h3 className="heading" style={{ fontSize: 'clamp(20px, 2.6vw, 28px)' }}>{e.role}</h3>
-                    {e.org && <span style={{ color: 'var(--accent)', fontSize: 16, fontWeight: 600 }}>{e.org}</span>}
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap', marginBottom: 12 }}>
+                    <h3 className="heading" style={{ fontSize: 'clamp(19px, 2.5vw, 26px)' }}>{e.role}</h3>
+                    {e.org && <span style={{ color: 'var(--accent)', fontSize: 15, fontWeight: 600 }}>{e.org}</span>}
                   </div>
-                  <p style={{ fontSize: 15, lineHeight: 1.65, color: 'var(--muted)', marginBottom: 14, maxWidth: 640 }}>{e.desc}</p>
+                  <ul style={{ paddingLeft: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 16 }}>
+                    {e.bullets.map((b, bi) => (
+                      <li key={bi} style={{ display: 'flex', gap: 10, fontSize: 14.5, lineHeight: 1.6, color: 'var(--muted)', maxWidth: 640 }}>
+                        <span style={{ color: 'var(--accent)', flexShrink: 0, marginTop: 2 }}>—</span>
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
                     {e.tags.map(tag => (
                       <span key={tag} style={{

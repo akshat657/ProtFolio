@@ -26,7 +26,7 @@ function Magnetic({ children }: { children: React.ReactNode }) {
   )
 }
 
-const navLinks = ['work', 'skills', 'about', 'experience']
+const navLinks = ['work', 'skills', 'experience', 'education', 'achievements']
 
 export default function NavSection({ theme, toggleTheme }: NavProps) {
   return (
@@ -44,15 +44,16 @@ export default function NavSection({ theme, toggleTheme }: NavProps) {
           background: 'linear-gradient(135deg, var(--accent), var(--accent2))',
           fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, color: '#04060c', fontSize: 17,
         }}>A</span>
-        <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '.04em', color: 'var(--muted)' }}>
-          akshat<span style={{ color: 'var(--text)' }}>.khandelwal</span>
+        <span style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+          <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 14, color: 'var(--text)', letterSpacing: '.01em', lineHeight: 1.15 }}>Akshat Khandelwal</span>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10.5, letterSpacing: '.04em', color: 'var(--muted)', lineHeight: 1 }}>AI Engineer</span>
         </span>
       </a>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(8px, 2vw, 30px)' }}>
         {navLinks.map(link => (
           <a key={link} href={`#${link}`}
-            style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12.5, letterSpacing: '.03em', color: 'var(--muted)', textDecoration: 'none', padding: '6px 2px', transition: 'color .2s' }}
+            style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12.5, fontWeight: 700, letterSpacing: '.03em', color: 'var(--muted)', textDecoration: 'none', padding: '6px 2px', transition: 'color .2s' }}
             onMouseEnter={e => (e.currentTarget.style.color = 'var(--text)')}
             onMouseLeave={e => (e.currentTarget.style.color = 'var(--muted)')}>
             {link}

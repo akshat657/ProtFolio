@@ -1,9 +1,9 @@
 ﻿import FadeIn from '../components/ui/FadeIn'
 
 const socials = [
-  { label: 'GitHub', url: 'https://github.com/akshat-khandelwal' },
-  { label: 'LinkedIn', url: 'https://linkedin.com/in/akshat-khandelwal' },
-  { label: 'Resume', url: '#' },
+  { label: 'GitHub', url: 'https://github.com/akshat657' },
+  { label: 'LinkedIn', url: 'https://linkedin.com/in/akshat-khandelwal-79647a245' },
+  { label: 'Resume', url: 'https://drive.google.com/file/d/1eaSyJf3bznRVWlhJ0YK_kp-Xs9VyB4T3/view?usp=sharing' },
 ]
 
 export default function ContactSection() {
@@ -35,9 +35,9 @@ export default function ContactSection() {
               }}>intelligent.</span>
             </h2>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: 'var(--muted)', maxWidth: 480, margin: '0 auto 38px' }}>
-              Have an AI problem worth solving, or a product to build? I&apos;m available for internships, projects, and collaborations.
+              Have a problem worth solving, or a product to build? Let&apos;s talk.
             </p>
-            <a href="mailto:hello@akshat.dev" style={{
+            <a href="mailto:akshatkhandelwal004@gmail.com" style={{
               display: 'inline-block', textDecoration: 'none', color: '#04060c',
               fontWeight: 700, fontSize: 16, padding: '16px 34px', borderRadius: 99,
               background: 'linear-gradient(135deg, var(--accent), var(--accent2))',

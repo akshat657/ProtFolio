@@ -6,6 +6,8 @@ import WorkSection from './sections/WorkSection'
 import SkillsSection from './sections/SkillsSection'
 import AboutSection from './sections/AboutSection'
 import ExperienceSection from './sections/ExperienceSection'
+import EducationSection from './sections/EducationSection'
+import AchievementsSection from './sections/AchievementsSection'
 import ContactSection from './sections/ContactSection'
 
 export type Theme = 'aurora' | 'nebula'
@@ -57,6 +59,8 @@ export default function App() {
       <SkillsSection />
       <AboutSection />
       <ExperienceSection />
+      <EducationSection />
+      <AchievementsSection />
       <ContactSection />
     </div>
   )
